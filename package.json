@@ -13,6 +13,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -22,6 +23,16 @@
       "react-app",
       "react-app/jest",
       "plugin:storybook/recommended"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/stories/**/*",
+      "!src/**/*.d.ts",
+      "!src/data.ts",
+      "!src/index.tsx",
+      "!src/@types/**/*"
     ]
   },
   "browserslist": {
