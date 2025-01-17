@@ -1,0 +1,54 @@
+.list-item {
+    display: flex;
+    border-radius: 6px;
+    padding: 0 0.5rem;
+    background-color: #fff;
+    cursor: pointer;
+    gap: 6px;
+
+    &:hover {
+        background-color: #F2F5F7;
+    }
+
+    &:enabled {
+        background-color: #F4F1FD;
+    }
+
+    &:active {
+        background-color: #E6ECEF;
+    }
+
+    .thumbnail {
+        display: flex;
+        flex: 0 0 2rem;
+
+        img {
+            width: 36px;
+            height: 36px;
+            padding: 8px;
+            border-radius: 50%;
+        }
+    }
+
+    .item-content {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        color: #20374B;
+        font-weight: 500;
+        font-size: 14px;
+        justify-content: center;
+        gap: 0;
+        cursor: pointer;
+
+        > * {
+            cursor: pointer;
+        }
+
+        .email {
+            color: #5A6D80;
+            font-weight: 400;
+            font-size: 13px;
+        }
+    }
+}
